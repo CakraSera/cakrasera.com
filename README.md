@@ -1,30 +1,38 @@
 # Rakhel Cakra's Website
+
 Hey, enjoy your time to read my personal website documentation.
 
-# Table of Contents
+## Table of Contents
 
 - [Rakhel Cakra's Website](#rakhel-cakras-website)
 - [Table of Contents](#table-of-contents)
 - [Pages](#pages)
 - [Link](#link)
 - [Previews](#previews)
-    - [Desktop](#desktop)
+  - [Desktop](#desktop)
 
-# Pages
-- Homepage
+## Pages
+
+- Home
 - Projects
 - Contact Me
 
-# Link
-- Figma: [Link](https://www.figma.com/design/jXYBN4yQf2clW1iamOgucl/rakhelcakra.com?node-id=2258-825&t=nHW0mjsg6Y4TgkxB-1)
+## Links
 
-# Previews
+- [Figma](https://www.figma.com/design/jXYBN4yQf2clW1iamOgucl/rakhelcakra.com?node-id=2258-825&t=nHW0mjsg6Y4TgkxB-1)
+
+## Previews
+
 ### Desktop
-- Homepage
-  ![alt text](image.png)
 
-- Project
-  ![alt text](image-1.png)
+Home:
 
-- Contact Me
-  ![alt text](image-2.png)
+![Home](home.png)
+
+Projects:
+
+![Projects](projects.png)
+
+Contact Me:
+
+![Contact Me](contact-me.png)
