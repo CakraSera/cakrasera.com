@@ -5,11 +5,11 @@ Hey, enjoy your time to read my personal website documentation.
 ## Table of Contents
 
 - [Rakhel Cakra's Website](#rakhel-cakras-website)
-- [Table of Contents](#table-of-contents)
-- [Pages](#pages)
-- [Link](#link)
-- [Previews](#previews)
-  - [Desktop](#desktop)
+  - [Table of Contents](#table-of-contents)
+  - [Pages](#pages)
+  - [Links](#links)
+  - [Previews](#previews)
+    - [Desktop](#desktop)
 
 ## Pages
 
@@ -27,12 +27,12 @@ Hey, enjoy your time to read my personal website documentation.
 
 Home:
 
-![Home](home.png)
+![Home](home.webp)
 
 Projects:
 
-![Projects](projects.png)
+![Projects](projects.webp)
 
 Contact Me:
 
-![Contact Me](contact-me.png)
+![Contact Me](contact-me.webp)
