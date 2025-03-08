@@ -17,5 +17,8 @@ Hey, enjoy your time to read my personal website documentation.
 # Previews
 ### Desktop
 - Homepage
+  ![alt text](image.png)
 - Project
+  ![alt text](image-1.png)
 - Contact Me
+  ![alt text](image-2.png)
