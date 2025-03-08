@@ -1,10 +1,14 @@
-# rakhelsera.com
+# Rakhel Cakra's Website
 Hey, enjoy your time to read my personal website documentation.
 
 # Table of Contents
-- Pages
-- Links
-- Previews
+
+- [Rakhel Cakra's Website](#rakhel-cakras-website)
+- [Table of Contents](#table-of-contents)
+- [Pages](#pages)
+- [Link](#link)
+- [Previews](#previews)
+    - [Desktop](#desktop)
 
 # Pages
 - Homepage
@@ -18,7 +22,9 @@ Hey, enjoy your time to read my personal website documentation.
 ### Desktop
 - Homepage
   ![alt text](image.png)
+
 - Project
   ![alt text](image-1.png)
+
 - Contact Me
   ![alt text](image-2.png)
