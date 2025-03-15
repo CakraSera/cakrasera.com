@@ -1,0 +1,36 @@
+:root{
+    --primary-color: #1C3330;
+    --secondary-color: #C35532;
+    --third-color: #E0E0E0;
+}
+
+@font-face {
+    font-family: 'Anime Ace';
+    src: url('../fonts/animeace2bb_tt/animeace2_reg.ttf');
+}
+
+#projects{
+    text-align: center;
+}
+
+#projects h1{
+    font-family: 'Anime Ace', sans-serif!important;
+    margin-bottom: 8px;
+}
+
+#projects .filter-buttons .filter-btn{
+    font-family: 'Anime Ace', sans-serif!important;
+    font-weight: bold;
+    margin-bottom: 8px;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid var(--primary-color);
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+#projects .filter-buttons .filter-btn:hover{
+    background-color: var(--secondary-color);
+    color: var(--third-color);
+    border-color: var(--third-color);
+}
