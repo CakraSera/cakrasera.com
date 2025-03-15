@@ -178,21 +178,21 @@ nav[aria-label="User Social Media"] a:hover {
 }
 
 
-#hero .hero-content .tech-stacks{
+.tech-stacks{
     margin-top: 0.5rem;
 }
 
-#hero .hero-content .tech-stacks h4 {
+.tech-stacks h4 {
     font-size: 1rem!important;
 }
 
-#hero .hero-content .tech-stacks ul{
+.tech-stacks ul{
     display: flex;
     gap: 1rem;
     margin-top: 0.5rem;
 }
 
-#hero .hero-content .tech-stacks ul li{
+.tech-stacks ul li{
     list-style: none;
     background-color: var(--secondary-color);
     color: var(--third-color);
