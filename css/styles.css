@@ -1,253 +1,262 @@
-:root{
-    --primary-color: #1C3330;
-    --secondary-color: #C35532;
-    --third-color: #E0E0E0;
+:root {
+  --primary-color: #1c3330;
+  --secondary-color: #c35532;
+  --third-color: #e0e0e0;
 }
 
 @font-face {
-    font-family: 'gang of three';
-    src: url('../fonts/go3v2.ttf') format('opentype');
+  font-family: "gang of three";
+  src: url("../fonts/go3v2.ttf") format("opentype");
 }
 
 @font-face {
-    font-family: 'Anime Ace';
-    src: url('../fonts/animeace2bb_tt/animeace2_reg.ttf');
+  font-family: "Anime Ace";
+  src: url("../fonts/animeace2bb_tt/animeace2_reg.ttf");
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'quicksand', sans-serif;
-    color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "quicksand", sans-serif;
+  color: var(--primary-color);
 }
 
-body{
-    background-color: var(--third-color);
+body {
+  background-color: var(--third-color);
 }
 
-
-header{
-    background-color: var(--primary-color);
-    display: flex;
-    justify-content: space-between;
-    padding: 1.5rem;
-    margin-bottom: 2rem;
+header {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
 }
 
-header h1{
-    font: 1rem 'gang of three', sans-serif;
-    font-size: 2rem;
-    color: var(--third-color);
+header h1 {
+  font: 1rem "gang of three", sans-serif;
+  font-size: 2rem;
+  color: var(--third-color);
 }
 
-header nav{
-    height: fit-content;
-    margin: auto 0;
+header nav {
+  height: fit-content;
+  margin: auto 0;
 }
 
-header nav ul{
-    display: flex;
-    justify-content: space-between;
-    font: 1rem 'Anime Ace', sans-serif;
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  font: 1rem "Anime Ace", sans-serif;
 }
 
-header .nav-icons{
-    stroke: var(--third-color);
+header .nav-icons {
+  stroke: var(--third-color);
 }
 
-header nav ul li{
-    margin: 0 1rem;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
-    padding: 4px;
+header nav ul li {
+  margin: 0 1rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 4px;
 }
 
-header nav ul li nav svg{
-    color: var(--third-color);
+header nav ul li nav svg {
+  color: var(--third-color);
 }
 
-header nav ul li a{
-    text-decoration: none;
-    font-family: 'Anime Ace', sans-serif;
-    color: var(--third-color);
-    font-size: 1rem;
+header nav ul li a {
+  text-decoration: none;
+  font-family: "Anime Ace", sans-serif;
+  color: var(--third-color);
+  font-size: 1rem;
 }
 
-header nav ul li:hover
-{
-    border-radius: 20px;
-    background-color: var(--secondary-color);
+header nav ul li:hover {
+  border-radius: 20px;
+  background-color: var(--secondary-color);
 }
 
-main{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    margin: 0 3rem;
+.navlinks {
+  display: flex;
 }
 
-#hero{
-    background: var(--primary-color);
-    display: flex;
-    gap: 0 3rem;
-    margin: 0 3rem;
-    padding: 1.5rem;
-    border-radius: 20px;
+.navlinks .icon {
+  color: var(--third-color);
 }
 
-#hero h2, #hero h3, #hero h4{
-    font-family: 'Anime Ace', sans-serif;
-    color: var(--third-color);
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0 3rem;
 }
 
-#hero p{
-    color: var(--third-color);
+.hero {
+  background: var(--primary-color);
+  display: flex;
+  gap: 0 3rem;
+  margin: 0 3rem;
+  padding: 1.5rem;
+  border-radius: 20px;
 }
 
-#hero img{
-    border-radius: 20px;
+.hero h2,
+.hero h3,
+.hero h4 {
+  font-family: "Anime Ace", sans-serif;
+  color: var(--third-color);
 }
 
-#hero .hero-header{
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    padding: 0.5rem 0;
-    gap: 0.6rem;
+.hero p {
+  color: var(--third-color);
 }
 
-#hero .hero-header nav ul{
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+.hero img {
+  border-radius: 20px;
 }
 
-#hero .hero-header nav ul li{
-    list-style: none;
-    text-align: center;
+.hero .hero-header {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 0.5rem 0;
+  gap: 0.6rem;
 }
 
-#hero .hero-header nav ul li i{
-    color: var(--third-color);
-    margin: auto 0;
-    font-size: 2.5rem;
-}
-#hero .hero-header nav ul li a{
-    text-decoration: none;
+.hero .hero-header nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
-nav[aria-label="User Social Media"]{
-    margin-top: 8px;
+.hero .hero-header nav ul li {
+  list-style: none;
+  text-align: center;
 }
 
-nav[aria-label="User Social Media"] li:hover{
+.hero .hero-header nav ul li i {
+  color: var(--third-color);
+  margin: auto 0;
+  font-size: 2.5rem;
+}
+.hero .hero-header nav ul li a {
+  text-decoration: none;
+}
+
+nav[aria-label="User Social Media"] {
+  margin-top: 8px;
+}
+
+nav[aria-label="User Social Media"] li:hover {
   transform: translateY(-5px);
 }
 
 nav[aria-label="User Social Media"] a:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-#hero .hero-header nav ul li a p{
-    margin-top: 4px;
-    font-weight: bold;
-    font-size: 0.8rem;
-    font-family: 'quicksand', sans-serif;
+.hero .hero-header nav ul li a p {
+  margin-top: 4px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  font-family: "quicksand", sans-serif;
 }
 
-#hero .hero-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.hero .hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-#hero .hero-content h2{
-    font-size: 1rem;
+.hero .hero-content h2 {
+  font-size: 1rem;
 }
 
-#hero .hero-content h3{
-    font-size: 2rem;
+.hero .hero-content h3 {
+  font-size: 2rem;
 }
 
-#hero .hero-content h4{
-    font-size: 1.5rem;
+.hero .hero-content h4 {
+  font-size: 1.5rem;
 }
 
-
-.tech-stacks{
-    margin-top: 0.5rem;
+.tech-stacks {
+  margin-top: 0.5rem;
 }
 
 .tech-stacks h4 {
-    font-size: 1rem!important;
+  font-size: 1rem !important;
 }
 
-.tech-stacks ul{
-    display: flex;
-    gap: 1rem;
-    margin-top: 0.5rem;
+.tech-stacks ul {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
 }
 
-.tech-stacks ul li{
-    list-style: none;
-    background-color: var(--secondary-color);
-    color: var(--third-color);
-    font-size: 0.8rem;
-    font-weight: bold;
-    padding: 6px 8px;
-    border-radius: 8px;
+.tech-stacks ul li {
+  list-style: none;
+  background-color: var(--secondary-color);
+  color: var(--third-color);
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 6px 8px;
+  border-radius: 8px;
 }
 
-#work-experience h2, #work-experience h3, #work-experience h4{
-    color: var(--primary-color);
-    font-family: 'Anime Ace', sans-serif;
+#work-experience h2,
+#work-experience h3,
+#work-experience h4 {
+  color: var(--primary-color);
+  font-family: "Anime Ace", sans-serif;
 }
 
-#work-experience p, #work-experience li{
-    color: var(--primary-color);
+#work-experience p,
+#work-experience li {
+  color: var(--primary-color);
 }
 
-#work-experience h2{
-    text-align: center; 
-    margin-bottom: 1rem;
+#work-experience h2 {
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
-#work-experience .work-experience-content{
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    gap: 1rem;
+#work-experience .work-experience-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
-#work-experience .work-experience-content .work-experience-item{
-    border-radius: 20px;
-    border:#1C3330 1px solid;
-    padding: 16px;
-    width: 50%;
+#work-experience .work-experience-content .work-experience-item {
+  border-radius: 20px;
+  border: #1c3330 1px solid;
+  padding: 16px;
+  width: 50%;
 }
 
 #work-experience .work-experience-content .work-experience-item .card-body,
-#work-experience .work-experience-content .work-experience-detail
-{
-    margin-top: 1rem;
+#work-experience .work-experience-content .work-experience-detail {
+  margin-top: 1rem;
 }
 
-.work-experience-detail ul{
-    margin-left: 1rem;
+.work-experience-detail ul {
+  margin-left: 1rem;
 }
 
-footer{
-    background-color: var(--primary-color);
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-    margin-top: 2rem;
+footer {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin-top: 2rem;
 }
 
-footer p{
-    color: var(--third-color);
+footer p {
+  color: var(--third-color);
 }
