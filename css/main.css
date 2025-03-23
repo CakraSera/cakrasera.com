@@ -16,8 +16,8 @@ main {
 
 .hero {
   background: var(--primary-color);
-  display: flex;
-  gap: 0 3rem;
+  /* display: flex;
+  gap: 0 3rem; */
   margin: 0 3rem;
   padding: 1.5rem;
   border-radius: 20px;
@@ -41,9 +41,9 @@ main {
 .hero .hero-header {
   display: flex;
   flex-direction: column;
+  gap: 0.6rem;
   height: auto;
   padding: 0.5rem 0;
-  gap: 0.6rem;
 }
 
 .hero .hero-header nav ul {
@@ -157,13 +157,13 @@ nav[aria-label="User Social Media"] a:hover {
   border-radius: 20px;
   border: #1c3330 1px solid;
   padding: 16px;
-  width: 50%;
+  /* width: 50%; */
 }
 
-.work-experience .work-experience-content .work-experience-item .card-body,
+/* .work-experience .work-experience-content .work-experience-item .card-body,
 .work-experience .work-experience-content .work-experience-detail {
   margin-top: 1rem;
-}
+} */
 
 .work-experience-detail ul {
   margin-left: 1rem;
