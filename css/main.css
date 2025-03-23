@@ -1,5 +1,4 @@
 @import "variables.css";
-@import "utilities.css";
 @import "base.css";
 @import "components.css";
 
@@ -30,7 +29,7 @@ main {
   color: var(--third-color);
 }
 
-.hero p {
+.hero li {
   color: var(--third-color);
 }
 

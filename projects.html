@@ -9,29 +9,40 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <header class="header">
-      <h1 class="header__logo">Rakhel Cakra K.S</h1>
+    <header class="header px-6xl">
+      <a href="/">
+        <h1 class="header__logo">Rakhel Cakra K.S</h1>
+      </a>
       <nav class="navlinks" aria-label="Main Navigation">
         <ul class="navlinks__list">
           <li class="navlinks__item">
-            <i class="nav__icons fa-solid fa-house"></i>
-            <a class="nav__text" href="/index.html">Home</a>
+            <a class="nav__text" href="/">
+              <i class="nav__icons fa-solid fa-house"></i>
+              <span>Home</span>
+            </a>
           </li>
           <li class="navlinks__item">
-            <i class="nav__icons fa-solid fa-briefcase"></i>
-            <a class="nav__text" href="/projects.html">Projects</a>
+            <a class="nav__text" href="/projects.html">
+              <i class="nav__icons fa-solid fa-briefcase"></i>
+              <span>Projects</span>
+            </a>
           </li>
           <li class="navlinks__item">
-            <i class="nav__icons fa-solid fa-globe"></i>
-            <a class="nav__text" href="/contact.html">Contact</a>
+            <a class="nav__text" href="/contact.html">
+              <i class="nav__icons fa-solid fa-globe"></i>
+              <span>Contact</span>
+            </a>
           </li>
         </ul>
       </nav>
     </header>
+
     <main>
       <section id="projects" class="text-center">
         <h1 class="mb-4">Projects</h1>
@@ -48,7 +59,8 @@
                   src="/images/projects/narai-coder.jpg"
                   alt="Project 1"
                   width="336"
-                  height="336" />
+                  height="336"
+                />
               </div>
               <div class="card-content">
                 <h2>Project 1</h2>
@@ -73,7 +85,8 @@
                   src="/images/projects/narai-coder.jpg"
                   alt="Project 1"
                   width="336"
-                  height="336" />
+                  height="336"
+                />
               </div>
               <div class="card-content">
                 <h2>Project 1</h2>
@@ -98,7 +111,8 @@
                   src="/images/projects/narai-coder.jpg"
                   alt="Project 1"
                   width="336"
-                  height="336" />
+                  height="336"
+                />
               </div>
               <div class="card-content">
                 <h2>Project 1</h2>

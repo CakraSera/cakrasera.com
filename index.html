@@ -9,30 +9,40 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
+      referrerpolicy="no-referrer"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <header class="header px-6xl">
-      <h1 class="header__logo">Rakhel Cakra K.S</h1>
+      <a href="/">
+        <h1 class="header__logo">Rakhel Cakra K.S</h1>
+      </a>
       <nav class="navlinks" aria-label="Main Navigation">
         <ul class="navlinks__list">
           <li class="navlinks__item">
-            <i class="nav__icons fa-solid fa-house"></i>
-            <a class="nav__text" href="/index.html">Home</a>
+            <a class="nav__text" href="/">
+              <i class="nav__icons fa-solid fa-house"></i>
+              <span>Home</span>
+            </a>
           </li>
           <li class="navlinks__item">
-            <i class="nav__icons fa-solid fa-briefcase"></i>
-            <a class="nav__text" href="/projects.html">Projects</a>
+            <a class="nav__text" href="/projects.html">
+              <i class="nav__icons fa-solid fa-briefcase"></i>
+              <span>Projects</span>
+            </a>
           </li>
           <li class="navlinks__item">
-            <i class="nav__icons fa-solid fa-globe"></i>
-            <a class="nav__text" href="/contact.html">Contact</a>
+            <a class="nav__text" href="/contact.html">
+              <i class="nav__icons fa-solid fa-globe"></i>
+              <span>Contact</span>
+            </a>
           </li>
         </ul>
       </nav>
     </header>
+
     <main>
       <section class="hero md:flex md:gap-x-16">
         <div class="hero-header">
@@ -41,29 +51,29 @@
             height="336"
             class="w-xl"
             src="/images/web-profile-img.jpg"
-            alt="hero-img" />
-          <nav
-            class="navlinks flex justify-center"
-            aria-label="User Social Media">
+            alt="hero-img"
+          />
+          <nav class="flex justify-center" aria-label="User Social Media">
             <ul>
               <li>
                 <a href="https://github.com/CakraSera" target="_blank">
                   <i class="fa-brands fa-github"></i>
-                  <p>Github</p>
+                  <span>Github</span>
                 </a>
               </li>
               <li>
                 <a
                   href="https://www.linkedin.com/in/rakhelcakrakusumadinatasera/"
-                  target="_blank">
+                  target="_blank"
+                >
                   <i class="fa-brands fa-linkedin"></i>
-                  <p>Linkedln</p>
+                  <span>Linkedln</span>
                 </a>
               </li>
               <li>
                 <a href="https://x.com/CakraRakhel" target="_blank">
                   <i class="fa-brands fa-twitter"></i>
-                  <p>Twitter</p>
+                  <span>Twitter</span>
                 </a>
               </li>
             </ul>
@@ -99,7 +109,8 @@
                 src="./images/dataon-logo.png"
                 alt="dataon logo"
                 class="w-64 h-48 object-cover"
-                height="96" />
+                height="96"
+              />
               <h3 class="font-bold">DataOn (PT Indodev Niaga Internet)</h3>
               <h4 class="font-bold">Mei 2023 - Present</h4>
             </div>
@@ -141,7 +152,8 @@
                 src="./images/qatros-logo.png"
                 alt="qatros logo"
                 height="96"
-                class="w-32 h-32 !mb-6 object-cover" />
+                class="w-32 h-32 !mb-6 object-cover"
+              />
               <h3 class="font-bold">QATROS (PT. QATROS TEKNOLOGI NUSANTARA)</h3>
               <h4 class="font-bold">Mei 2023 - Present</h4>
             </div>

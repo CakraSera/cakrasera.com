@@ -29,10 +29,6 @@ header .nav-icons {
   stroke: var(--third-color);
 }
 
-.navlinks {
-  display: flex;
-}
-
 .navlinks .icon {
   color: var(--third-color);
 }
