@@ -4,47 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CakraSera</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      referrerpolicy="no-referrer" />
   </head>
   <body>
-    <header>
-      <h1>Rakhel Cakra K.S</h1>
+    <header class="header px-6xl">
+      <h1 class="header__logo">Rakhel Cakra K.S</h1>
       <nav class="navlinks" aria-label="Main Navigation">
-        <ul>
-          <li>
-            <i class="icon fa-solid fa-house"></i>
-            <a href="/index.html">Home</a>
+        <ul class="navlinks__list">
+          <li class="navlinks__item">
+            <i class="nav__icons fa-solid fa-house"></i>
+            <a class="nav__text" href="/index.html">Home</a>
           </li>
-          <li>
-            <i class="icon fa-solid fa-briefcase"></i>
-            <a href="/projects.html">Projects</a>
+          <li class="navlinks__item">
+            <i class="nav__icons fa-solid fa-briefcase"></i>
+            <a class="nav__text" href="/projects.html">Projects</a>
           </li>
-          <li>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="size-6 nav-icons"
-              width="24"
-              height="24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"
-              />
-            </svg>
-
-            <a href="/contact.html">Contact</a>
+          <li class="navlinks__item">
+            <i class="nav__icons fa-solid fa-globe"></i>
+            <a class="nav__text" href="/contact.html">Contact</a>
           </li>
         </ul>
       </nav>
@@ -56,9 +39,10 @@
             width="336"
             height="336"
             src="/images/web-profile-img.jpg"
-            alt="hero-img"
-          />
-          <nav aria-label="User Social Media">
+            alt="hero-img" />
+          <nav
+            class="navlinks flex justify-center"
+            aria-label="User Social Media">
             <ul>
               <li>
                 <a href="https://github.com/CakraSera" target="_blank">
@@ -69,8 +53,7 @@
               <li>
                 <a
                   href="https://www.linkedin.com/in/rakhelcakrakusumadinatasera/"
-                  target="_blank"
-                >
+                  target="_blank">
                   <i class="fa-brands fa-linkedin"></i>
                   <p>Linkedln</p>
                 </a>
@@ -96,7 +79,7 @@
           </p>
           <div class="tech-stacks">
             <h4>MY TECH STACKS:</h4>
-            <ul>
+            <ul class="flex justify-left">
               <li>CSS</li>
               <li>Javascript</li>
               <li>Node Js</li>
@@ -105,7 +88,7 @@
           </div>
         </article>
       </section>
-      <section id="work-experience">
+      <section id="work-experience" class="work-experience">
         <h2>Work Experience</h2>
         <div class="work-experience-content">
           <div class="work-experience-item">
@@ -113,8 +96,7 @@
               <img
                 src="./images/dataon-logo.png"
                 alt="dataon logo"
-                height="96"
-              />
+                height="96" />
               <h3>DataOn (PT Indodev Niaga Internet)</h3>
               <h4>Mei 2023 - Present</h4>
             </div>
@@ -155,8 +137,7 @@
               <img
                 src="./images/qatros-logo.png"
                 alt="qatros logo"
-                height="96"
-              />
+                height="96" />
               <h3>QATROS (PT. QATROS TEKNOLOGI NUSANTARA)</h3>
               <h4>Mei 2023 - Present</h4>
             </div>
