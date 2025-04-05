@@ -4,91 +4,163 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CakraSera</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="css/main.css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'sans': ['Poppins', 'sans-serif'], // Default font
+              'bangers': ['Bangers', 'sans-serif'],
+              'comic': ['Comic Neue', 'sans-serif']
+            }
+          }
+        }
+      }
+    </script>
   </head>
-  <body>
-    <header class="header px-6xl">
-      <h1 class="header__logo">Rakhel Cakra K.S</h1>
-      <nav class="navlinks" aria-label="Main Navigation">
-        <ul class="navlinks__list">
-          <li class="navlinks__item">
-            <i class="nav__icons fa-solid fa-house"></i>
-            <a class="nav__text" href="/index.html">Home</a>
+  <body class="bg-gray-200">
+    <header class="flex justify-between px-4 md:px-8 py-4 md:py-10 bg-teal-950 text-gray-200 w-full sticky top-0">
+      <h1 class="font-bold font-bangers text-gray-200 text-[clamp(1.5rem,4vw,3rem)]">🦉Rakhel Cakra K.S</h1>
+      <div class="md:hidden rounded-full my-auto border-2 border-gray-200 p-2 w-10 h-10 flex items-center justify-center">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <nav class="hidden md:block" aria-label="Main Navigation">
+        <ul class="flex gap-4 font-comic font-bold">
+          <li class="whitespace-nowrap mx-4 p-[0.25rem] hover:bg-orange-700 rounded-2xl text-xl">
+            <a href="/index.html"
+              ><i class="mr-1 fa-solid fa-house"></i>
+              <span>Home</span></a>
           </li>
-          <li class="navlinks__item">
-            <i class="nav__icons fa-solid fa-briefcase"></i>
-            <a class="nav__text" href="/projects.html">Projects</a>
+          <li class="whitespace-nowrap mx-4 p-[0.25rem] hover:bg-orange-700 rounded-2xl text-xl">
+            <a href="/projects.html">
+              <i class="mr-1 fa-solid fa-briefcase"></i>
+              <span>Projects</span></a>
           </li>
-          <li class="navlinks__item">
-            <i class="nav__icons fa-solid fa-globe"></i>
-            <a class="nav__text" href="/contact.html">Contact</a>
+          <li class="whitespace-nowrap mx-4 p-[0.25rem] hover:bg-orange-700 rounded-2xl text-xl">
+            <a href="/contact.html">
+              <i class="mr-1 fa-solid fa-globe"></i>
+              <span>Contact</span></a>
           </li>
         </ul>
       </nav>
     </header>
-    <main>
-      <section class="hero md:flex md:gap-x-16">
-        <div class="hero-header">
-          <img
-            width="336"
-            height="336"
-            class="w-xl"
-            src="/images/web-profile-img.jpg"
-            alt="hero-img" />
-          <nav
-            class="navlinks flex justify-center"
-            aria-label="User Social Media">
-            <ul>
-              <li>
-                <a href="https://github.com/CakraSera" target="_blank">
-                  <i class="fa-brands fa-github"></i>
-                  <p>Github</p>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/rakhelcakrakusumadinatasera/"
-                  target="_blank">
-                  <i class="fa-brands fa-linkedin"></i>
-                  <p>Linkedln</p>
-                </a>
-              </li>
-              <li>
-                <a href="https://x.com/CakraRakhel" target="_blank">
-                  <i class="fa-brands fa-twitter"></i>
-                  <p>Twitter</p>
-                </a>
-              </li>
-            </ul>
-          </nav>
+    <main class="md:mx-12 mx-4">
+      <section class="flex flex-col justify-center min-h-[calc(100vh-8rem)]">
+        <div class="md:mx-12 p-6 rounded-2xl md:flex md:gap-x-16 bg-teal-950 text-gray-200">
+          <div class="mb-2">
+              <img
+                width="336"
+                height="336"
+                class="w-xl rounded-2xl"
+                src="/images/web-profile-img.jpg"
+                alt="hero-img" />
+            </div>
+            <article class="hero-content mt-4 text-center md:text-left">
+              <h1 class="font-bold text-[clamp(1.5rem,4vw,3rem)] font-comic">
+                Hi, I'm <span class="font-bold text-orange-700 border-gray-200 font-extrabold bg-gray-200 rounded-2xl px-2">Rakhel Cakra K.S</span>
+              </h1>
+              <p class="border-gray-200 text font-comic font-bold text-xl">Fullstack Web Developer</p>
+              <nav
+                class="navlinks flex justify-center md:justify-start"
+                aria-label="User Social Media">
+                <ul class="flex gap-4">
+                  <li class="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-orange-700 rounded-2xl">
+                    <a href="https://github.com/CakraSera" target="_blank">
+                      <i class="fa-brands fa-github text-2xl"></i>
+                      <p class="font-comic font-bold">Github</p>
+                    </a>
+                  </li>
+                  <li class="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-orange-700 rounded-2xl">
+                    <a
+                      href="https://www.linkedin.com/in/rakhelcakrakusumadinatasera/"
+                      target="_blank">
+                      <i class="fa-brands fa-linkedin text-2xl"></i>
+                      <p class="font-comic font-bold">Linkedln</p>
+                    </a>
+                  </li>
+                  <li class="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-orange-700 rounded-2xl">
+                    <a href="https://x.com/CakraRakhel" target="_blank">
+                      <i class="fa-brands fa-twitter text-2xl"></i>
+                      <p class="font-comic font-bold">Twitter</p>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+          </h1>
+          </article>
         </div>
-        <article class="hero-content">
-          <h2 class="font-bold">WHO AM I</h2>
-          <h3 class="font-bold">RAKHEL CAKRA KUSUMADINATA SERA</h3>
-          <h4 class="font-bold">FULLSTACK WEB DEVELOPER</h4>
-          <p>
-            I am a software engineer with more than 2 years of experience. I
-            love to learn codes, design website, and explore new things about
-            technology. I really enjoy making web application, particularly in
-            the frontend. So many place can i explore from that
-          </p>
-          <div class="tech-stacks">
-            <h4>MY TECH STACKS:</h4>
-            <ul class="flex justify-left">
-              <li>CSS</li>
-              <li>Javascript</li>
-              <li>Node Js</li>
-              <li>React Js</li>
-            </ul>
-          </div>
-        </article>
+      </section>
+
+      <section id="about-me" class="flex flex-col justify-center mx-20 lg:pt-40 min-h-screen">
+        <div class="mb-4">
+          <h2 class="font-bold text-2xl font-comic text-teal-800">Introduction</h2>
+          <h2 class="font-bold text-4xl text-teal-950 font-comic">About Me</h2>
+        </div>
+        <p class="font-comic font-bold text-xl">Software engineer with 2+ years of experience transforming ideas into elegant solutions. Fluent in TypeScript, JavaScript, React, and Node.js, I blend technical expertise with creative problem-solving to build intuitive applications that make an impact. Let's create something remarkable together.</p>
+      </section>
+      <section id="tech-stack" class="min-h-screen">
+        <h2 class="font-bold text-4xl text-teal-950 font-comic mb-4 text-center">My Tech Stacks</h2>
+        <ul class="grid justify-center md:justify-start grid-cols-2 md:grid-cols-3">
+          <li class="font-comic font-bold text-xl rounded-2xl border-2">
+            <div class="flex flex-col items-center justify-center my-4">
+              <img src="./images/tech-skills/react.svg" alt="React JS" class="w-16 h-16 object-cover">
+              React JS
+            </div>
+          </li>
+          <li class="font-comic font-bold text-xl rounded-2xl border-2">
+            <div class="flex flex-col items-center justify-center my-4  ">
+              <img src="./images/tech-skills/next-js.svg" alt="Next JS" class="w-16 h-16">
+              Next JS
+            </div>
+          </li>
+          <li class="font-comic font-bold text-xl rounded-2xl border-2">
+            <div class="flex flex-col items-center justify-center my-4">
+              <img src="./images/tech-skills/javascript.svg" alt="JavaScript" class="w-16 h-16 object-cover">
+              JavaScript
+            </div>
+          </li>
+          <li class="font-comic font-bold text-xl rounded-2xl border-2">
+            <div class="flex flex-col items-center justify-center my-4">
+              <img src="./images/tech-skills/typescript.svg" alt="TypeScript" class="w-16 h-16 object-cover">
+              TypeScript
+            </div>
+          </li>
+          <li class="font-comic font-bold text-xl rounded-2xl border-2">
+            <div class="flex flex-col items-center justify-center my-4">
+              <img src="./images/tech-skills/tailwind.svg" alt="Tailwind" class="w-16 h-16 object-cover">
+              Tailwind
+            </div>
+          </li>
+          <li class="font-comic font-bold text-xl rounded-2xl border-2">
+            <div class="flex flex-col items-center justify-center my-4">
+              <img src="./images/tech-skills/mongodb.svg" alt="MongoDB" class="w-16 h-16 object-cover">
+              MongoDB
+            </div>
+          </li>
+          <li class="font-comic font-bold text-xl rounded-2xl border-2">
+            <div class="flex flex-col items-center justify-center my-4">
+              <img src="./images/tech-skills/nodejs.svg" alt="Node JS" class="w-16 h-16">
+              Node Js
+            </div>
+          </li>
+          <li class="font-comic font-bold text-xl rounded-2xl border-2">
+            <div class="flex flex-col items-center justify-center my-4">
+              <img src="./images/tech-skills/express.svg" alt="Express JS" class="w-16 h-16 object-cover">
+              Express JS
+            </div>
+          </li>
+        </ul>
       </section>
       <section id="work-experience" class="work-experience">
         <h2 class="font-bold text-3xl">Work Experience</h2>
@@ -101,36 +173,32 @@
                 class="w-64 h-48 object-cover"
                 height="96" />
               <h3 class="font-bold">DataOn (PT Indodev Niaga Internet)</h3>
-              <h4 class="font-bold">Mei 2023 - Present</h4>
+              <h3 class="font-bold !text-gray-500">Implementation Consultant (Focusing on development application)</h3>
+              <h4 class="font-bold !text-gray-500">Mei 2023 - Present</h4>
             </div>
-            <div class="!mt-2 card-body">
+            <div class="mt-2 card-body">
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Facere, dignissimos qui ullam pariatur atque, illo dolor non
-                esse est et mollitia earum a reiciendis? Architecto est vel
-                optio quaerat provident!
+                As an Implementation Developer at DataOn, I specialize in creating customized web applications tailored to client specifications and business requirements. I translate client needs into functional, user-friendly solutions while maintaining code quality and performance standards.
               </p>
-              <div class="!mt-2 work-experience-detail">
+              <div class="mt-2 work-experience-detail">
                 <p>My Work Included:</p>
-                <ul>
+                <ul class="list-disc">
                   <li>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Atque molestias error eos dicta non rerum. Pariatur, nemo
-                    iure quasi ratione quos excepturi qui quas. Consequuntur
-                    quidem voluptates illum sapiente temporibus?
+                    Developing and implementing custom web applications using React.js, CFML, HTML, CSS, and JavaScript to meet specific client requirements
                   </li>
                   <li>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Atque molestias error eos dicta non rerum. Pariatur, nemo
-                    iure quasi ratione quos excepturi qui quas. Consequuntur
-                    quidem voluptates illum sapiente temporibus?
+                    Collaborating closely with Implementation Consultants to ensure deliverables align with client expectations and business objectives
                   </li>
                   <li>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Atque molestias error eos dicta non rerum. Pariatur, nemo
-                    iure quasi ratione quos excepturi qui quas. Consequuntur
-                    quidem voluptates illum sapiente temporibus?
+                    Maintaining consistent code quality through Git version control, Gitlab for CI/CD, and SonarQube for code quality assurance
                   </li>
+                  <li>
+                    Adapting and extending DataOn's core applications to create customized solutions for enterprise clients
+                  </li>
+                  <li>
+                    Troubleshooting and resolving technical issues to ensure smooth application deployment and operation                  </li>
+                  <li>
+                    Consistently achieving high performance ratings, with a current score of 4.32/5                  </li>
                 </ul>
               </div>
             </div>
@@ -154,7 +222,7 @@
               </p>
               <div class="!mt-2 work-experience-detail">
                 <p>My Work Included:</p>
-                <ul>
+                <ul class="list-disc">
                   <li>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Atque molestias error eos dicta non rerum. Pariatur, nemo

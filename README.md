@@ -27,12 +27,12 @@ Hey, enjoy your time to read my personal website documentation.
 
 Home:
 
-![Home](home.webp)
+![Home](images/home.webp)
 
 Projects:
 
-![Projects](projects.webp)
+![Projects](images/projects.webp)
 
 Contact Me:
 
-![Contact Me](contact-me.webp)
+![Contact Me](images/contact-me.webp)

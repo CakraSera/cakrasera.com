@@ -37,6 +37,7 @@ header .nav-icons {
   color: var(--third-color);
 }
 
+/* TODO: */
 .navlinks__item {
   margin: 0 1rem;
   list-style: none;

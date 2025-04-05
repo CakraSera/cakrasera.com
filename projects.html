@@ -10,6 +10,65 @@
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --primary-color: #1c3330;
+        --secondary-color: #c35532;
+        --tertiary-color: #e0e0e0;
+      }
+    </style>
+
+    <!-- Custom Fonts First (important for correct loading) -->
+    <style>
+      @font-face {
+        font-family: "GangOfThree";
+        src: url("/fonts/go3v2.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: "AnimeAce";
+        src: url("/fonts/animeace2bb_tt/animeace2_reg.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+    </style>
+
+    <!-- Tailwind Configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1c3330",
+              secondary: "#c35532",
+              tertiary: "#e0e0e0",
+            },
+            fontFamily: {
+              gang: ["GangOfThree", "system-ui", "sans-serif"],
+              anime: ["AnimeAce", "system-ui", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Additional Tailwind Custom Styles -->
+    <style type="text/tailwindcss">
+      @layer components {
+        .font-gang {
+          font-family: GangOfThree, system-ui, sans-serif;
+        }
+
+        .font-anime {
+          font-family: AnimeAce, system-ui, sans-serif;
+        }
+      }
+    </style>
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
@@ -33,8 +92,10 @@
       </nav>
     </header>
     <main>
-      <section id="projects" class="text-center">
-        <h1 class="mb-4">Projects</h1>
+      <section id="projects" class="text-center projects">
+        <h1 class="project-title text-4xl font-anime text-primary mb-8">
+          Projects
+        </h1>
         <div class="filter-buttons">
           <button class="filter-btn active">ALL</button>
           <button class="filter-btn">WEBSITE</button>
