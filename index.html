@@ -34,9 +34,9 @@
       };
     </script>
   </head>
-  <body class="bg-gray-200">
+  <body class="bg-gray-200 relative">
     <header
-      class="flex justify-between px-4 md:px-8 py-4 md:py-10 bg-teal-950 text-gray-200 w-full sticky top-0">
+      class="flex justify-between px-4 md:px-8 py-4 md:py-10 bg-teal-950 text-gray-200 w-full fixed">
       <h1
         class="font-bold font-bangers text-gray-200 text-[clamp(1.5rem,4vw,3rem)]">
         🦉Rakhel Cakra K.S
@@ -87,7 +87,7 @@
               Hi, I'm
               <span
                 class="text-orange-700 border-gray-200 font-extrabold bg-gray-200 rounded-2xl px-2"
-                >Rakhel Cakra K.S</span
+                >Cakra</span
               >
             </h1>
             <p class="border-gray-200 text font-comic font-bold text-xl">
@@ -156,7 +156,16 @@
                 src="./images/tech-skills/react.svg"
                 alt="React JS"
                 class="w-16 h-16 object-cover" />
-              React JS
+              <p>React JS</p>
+            </div>
+          </li>
+          <li class="font-comic font-bold text-xl rounded-2xl border-2">
+            <div class="flex flex-col items-center justify-center my-4">
+              <img
+                src="./images/tech-skills/vue.svg"
+                alt="React JS"
+                class="w-16 h-16" />
+              <p>Vue JS</p>
             </div>
           </li>
           <li class="font-comic font-bold text-xl rounded-2xl border-2">
@@ -165,7 +174,7 @@
                 src="./images/tech-skills/next-js.svg"
                 alt="Next JS"
                 class="w-16 h-16" />
-              Next JS
+              <p>Next JS</p>
             </div>
           </li>
           <li class="font-comic font-bold text-xl rounded-2xl border-2">
@@ -174,7 +183,7 @@
                 src="./images/tech-skills/javascript.svg"
                 alt="JavaScript"
                 class="w-16 h-16 object-cover" />
-              JavaScript
+              <p>JavaScript</p>
             </div>
           </li>
           <li class="font-comic font-bold text-xl rounded-2xl border-2">
@@ -183,7 +192,7 @@
                 src="./images/tech-skills/typescript.svg"
                 alt="TypeScript"
                 class="w-16 h-16 object-cover" />
-              TypeScript
+              <p>TypeScript</p>
             </div>
           </li>
           <li class="font-comic font-bold text-xl rounded-2xl border-2">
@@ -192,7 +201,7 @@
                 src="./images/tech-skills/tailwind.svg"
                 alt="Tailwind"
                 class="w-16 h-16 object-cover" />
-              Tailwind
+              <p>Tailwind</p>
             </div>
           </li>
           <li class="font-comic font-bold text-xl rounded-2xl border-2">
@@ -201,7 +210,7 @@
                 src="./images/tech-skills/mongodb.svg"
                 alt="MongoDB"
                 class="w-16 h-16 object-cover" />
-              MongoDB
+              <p>MongoDB</p>
             </div>
           </li>
           <li class="font-comic font-bold text-xl rounded-2xl border-2">
@@ -210,7 +219,7 @@
                 src="./images/tech-skills/nodejs.svg"
                 alt="Node JS"
                 class="w-16 h-16" />
-              Node Js
+              <p>Node Js</p>
             </div>
           </li>
           <li class="font-comic font-bold text-xl rounded-2xl border-2">
@@ -219,116 +228,129 @@
                 src="./images/tech-skills/express.svg"
                 alt="Express JS"
                 class="w-16 h-16 object-cover" />
-              Express JS
+              <p>Express JS</p>
             </div>
           </li>
         </ul>
       </section>
-      <section id="work-experience" class="work-experience">
-        <h2 class="font-bold text-3xl">Work Experience</h2>
-        <div class="work-experience-content">
-          <div class="md:w-1/2 work-experience-item">
-            <div class="card-header">
-              <img
-                src="./images/dataon-logo.png"
-                alt="dataon logo"
-                class="w-64 h-48 object-cover"
-                height="96" />
-              <h3 class="font-bold">DataOn (PT Indodev Niaga Internet)</h3>
-              <h3 class="font-bold !text-gray-500">
-                Implementation Consultant (Focusing on development application)
-              </h3>
-              <h4 class="font-bold !text-gray-500">Mei 2023 - Present</h4>
-            </div>
-            <div class="mt-2 card-body">
-              <p>
-                As an Implementation Developer at DataOn, I specialize in
-                creating customized web applications tailored to client
-                specifications and business requirements. I translate client
-                needs into functional, user-friendly solutions while maintaining
-                code quality and performance standards.
-              </p>
-              <div class="mt-2 work-experience-detail">
-                <p>My Work Included:</p>
-                <ul class="list-disc">
-                  <li>
-                    Developing and implementing custom web applications using
-                    React.js, CFML, HTML, CSS, and JavaScript to meet specific
-                    client requirements
-                  </li>
-                  <li>
-                    Collaborating closely with Implementation Consultants to
-                    ensure deliverables align with client expectations and
-                    business objectives
-                  </li>
-                  <li>
-                    Maintaining consistent code quality through Git version
-                    control, Gitlab for CI/CD, and SonarQube for code quality
-                    assurance
-                  </li>
-                  <li>
-                    Adapting and extending DataOn's core applications to create
-                    customized solutions for enterprise clients
-                  </li>
-                  <li>
-                    Troubleshooting and resolving technical issues to ensure
-                    smooth application deployment and operation
-                  </li>
-                  <li>
-                    Consistently achieving high performance ratings, with a
-                    current score of 4.32/5
-                  </li>
-                </ul>
+      <section id="work-experience">
+        <h2
+          class="font-bold text-4xl text-teal-950 text-center font-comic mb-8 md:text-left">
+          Work Experience
+        </h2>
+        <div class="flex flex-col gap-6 border-teal-950 border-l-2 ml-2 pl-6">
+          <div class="">
+            <div
+              class="md:w-1/2 border-2 border-teal-950 rounded-2xl relative before:absolute before:content-[''] before:w-7 before:h-7 before:bg-teal-950 before:rounded-full before:-left-[2.5rem] before:top-10">
+              <div class="m-2">
+                <div class="card-header flex flex-col items-center">
+                  <img
+                    src="./images/dataon-logo.png"
+                    alt="dataon logo"
+                    class="w-40 h-32 object-cover"
+                    height="96" />
+                  <h3 class="font-bold text-xl font-comic">
+                    Implementation Consultant Jr
+                  </h3>
+                  <h3 class="font-bold font-comic">
+                    DataOn (PT Indodev Niaga Internet)
+                  </h3>
+                  <h4 class="font-bold !text-gray-500 font-comic">
+                    Mei 2023 - Present
+                  </h4>
+                </div>
+                <div class="mt-2 card-body">
+                  <ul class="list-disc list-inside">
+                    <li>
+                      Developing and implementing custom web applications using
+                      React.js, CFML, HTML, CSS, and JavaScript to meet specific
+                      client requirements
+                    </li>
+                    <li>
+                      Collaborating closely with Implementation Consultants to
+                      ensure deliverables align with client expectations and
+                      business objectives
+                    </li>
+                    <li>
+                      Maintaining consistent code quality through Git version
+                      control, Gitlab for CI/CD, and SonarQube for code quality
+                      assurance
+                    </li>
+                    <li>
+                      Adapting and extending DataOn's core applications to
+                      create customized solutions for enterprise clients
+                    </li>
+                    <li>
+                      Troubleshooting and resolving technical issues to ensure
+                      smooth application deployment and operation
+                    </li>
+                    <li>
+                      Consistently achieving high performance ratings, with a
+                      current score of 4.32/5
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-          <div class="md:w-1/2 work-experience-item">
-            <div class="card-header">
-              <img
-                src="./images/qatros-logo.png"
-                alt="qatros logo"
-                height="96"
-                class="w-32 h-32 !mb-6 object-cover" />
-              <h3 class="font-bold">QATROS (PT. QATROS TEKNOLOGI NUSANTARA)</h3>
-              <h4 class="font-bold">Mei 2023 - Present</h4>
-            </div>
-            <div class="!mt-2 card-body">
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Facere, dignissimos qui ullam pariatur atque, illo dolor non
-                esse est et mollitia earum a reiciendis? Architecto est vel
-                optio quaerat provident!
-              </p>
-              <div class="!mt-2 work-experience-detail">
-                <p>My Work Included:</p>
-                <ul class="list-disc">
-                  <li>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Atque molestias error eos dicta non rerum. Pariatur, nemo
-                    iure quasi ratione quos excepturi qui quas. Consequuntur
-                    quidem voluptates illum sapiente temporibus?
-                  </li>
-                  <li>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Atque molestias error eos dicta non rerum. Pariatur, nemo
-                    iure quasi ratione quos excepturi qui quas. Consequuntur
-                    quidem voluptates illum sapiente temporibus?
-                  </li>
-                  <li>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Atque molestias error eos dicta non rerum. Pariatur, nemo
-                    iure quasi ratione quos excepturi qui quas. Consequuntur
-                    quidem voluptates illum sapiente temporibus?
-                  </li>
-                </ul>
+          <div>
+            <div
+              class="md:w-1/2 border-2 border-teal-950 rounded-2xl relative before:absolute before:content-[''] before:w-7 before:h-7 before:bg-teal-950 before:rounded-full before:-left-[2.5rem] before:top-10">
+              <div class="m-2">
+                <div class="card-header flex flex-col items-center">
+                  <img
+                    src="./images/qatros-logo.png"
+                    alt="qatros logo"
+                    class="w-40 h-32 object-cover"
+                    height="96" />
+                  <h3 class="font-bold text-xl font-comic">
+                    Software Engineer
+                  </h3>
+                  <h3 class="font-bold font-comic">
+                    QATROS (PT. QATROS TEKNOLOGI NUSANTARA)
+                  </h3>
+                  <h4 class="font-bold !text-gray-500 font-comic">
+                    Mei 2023 - Present
+                  </h4>
+                </div>
+                <div class="mt-2 card-body">
+                  <ul class="list-disc list-inside">
+                    <li>
+                      Developing and implementing custom web applications using
+                      React.js, Node.js, HTML, CSS, and JavaScript to meet
+                      specific client requirements
+                    </li>
+                    <li>
+                      Collaborating closely with team members to ensure
+                      deliverables align with client expectations and business
+                      objectives
+                    </li>
+                    <li>
+                      Maintaining consistent code quality through Git version
+                      control and implementing CI/CD best practices
+                    </li>
+                    <li>
+                      Creating customized solutions for enterprise clients using
+                      modern web technologies and frameworks
+                    </li>
+                    <li>
+                      Troubleshooting and resolving technical issues to ensure
+                      smooth application deployment and operation
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer aria-label="Footer">
-      <p>&copy;2025 - Rakhel Cakra proudly powers this homepage.</p>
+    <footer
+      aria-label="Footer"
+      class="bg-teal-950 flex justify-center p-4 mt-8">
+      <p class="text-gray-200 text-center">
+        &copy;2025 - Rakhel Cakra proudly powers this homepage.
+      </p>
     </footer>
   </body>
 </html>
