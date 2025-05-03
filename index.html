@@ -34,11 +34,11 @@
       };
     </script>
   </head>
-  <body class="bg-gray-200 relative">
+  <body class="bg-gray-200">
     <header
-      class="flex justify-between px-4 md:px-8 py-4 md:py-10 bg-teal-950 text-gray-200 w-full fixed">
+      class="flex justify-between px-4 md:px-32 py-4 md:py-10 bg-teal-950 text-gray-200 w-full fixed">
       <h1
-        class="font-bold font-bangers text-gray-200 text-[clamp(1.5rem,4vw,3rem)]">
+        class="font-bold font-bangers text-gray-200 text-[clamp(1.5rem,4vw,3rem)] md:text-2xl">
         🦉Rakhel Cakra K.S
       </h1>
       <div
@@ -71,30 +71,29 @@
       </nav>
     </header>
     <main class="md:mx-12 mx-4">
-      <section class="flex flex-col justify-center min-h-[calc(100vh-8rem)]">
-        <div
-          class="md:mx-12 p-6 rounded-2xl md:flex md:gap-x-16 bg-teal-950 text-gray-200">
-          <div class="mb-2">
+      <section
+        class="flex flex-col justify-center min-h-screen md:min-h-[calc(100vh-8rem)]">
+        <div class="p-6 rounded-2xl bg-teal-950 text-gray-200 mx-auto">
+          <div class="mb-2 flex justify-center">
             <img
-              width="336"
-              height="336"
-              class="w-xl rounded-2xl"
+              class="w-xl md:w-64 rounded-2xl"
               src="/images/web-profile-img.jpg"
               alt="hero-img" />
           </div>
-          <article class="hero-content mt-4 text-center md:text-left">
+          <article class="hero-content mt-4 text-center">
             <h1 class="font-bold text-[clamp(1.5rem,4vw,3rem)] font-comic">
-              Hi, I'm
+              👋 Hi, I'm
               <span
                 class="text-orange-700 border-gray-200 font-extrabold bg-gray-200 rounded-2xl px-2"
                 >Cakra</span
               >
             </h1>
-            <p class="border-gray-200 text font-comic font-bold text-xl">
-              Fullstack Web Developer
+            <p
+              class="border-gray-200 text font-comic font-bold text-xl md:text-[clamp(1rem,4vw,1.5rem)]">
+              I'm a Fullstack Web Developer 👨🏼‍💻
             </p>
             <nav
-              class="navlinks flex justify-center md:justify-start"
+              class="navlinks flex justify-center"
               aria-label="User Social Media">
               <ul class="flex gap-4">
                 <li
@@ -133,10 +132,12 @@
           <h2 class="font-bold text-2xl font-comic text-teal-800">
             Introduction
           </h2>
-          <h2 class="font-bold text-4xl text-teal-950 font-comic">About Me</h2>
+          <h2 class="font-bold text-4xl text-teal-950 font-comic">
+            About Me <span class="text-2xl">🙋🏼‍♂️</span>
+          </h2>
         </div>
         <p class="font-comic font-bold text-xl">
-          Software engineer with 2+ years of experience transforming ideas into
+          Full Web Developer with 2+ years of experience transforming ideas into
           elegant solutions. Fluent in TypeScript, JavaScript, React, and
           Node.js, I blend technical expertise with creative problem-solving to
           build intuitive applications that make an impact. Let's create
@@ -145,98 +146,107 @@
       </section>
       <section id="tech-stack" class="min-h-screen">
         <h2
-          class="font-bold text-4xl text-teal-950 font-comic mb-4 text-center">
-          My Tech Stacks
+          class="font-bold text-2xl text-teal-950 font-comic mb-4 text-center">
+          My Tech Stacks 🚀
         </h2>
         <ul
-          class="grid justify-center md:justify-start grid-cols-2 md:grid-cols-3">
-          <li class="font-comic font-bold text-xl rounded-2xl border-2">
-            <div class="flex flex-col items-center justify-center my-4">
+          class="grid justify-center md:justify-start grid-cols-2 md:grid-cols-3 gap-4">
+          <li class="font-comic font-bold rounded-2xl border-2">
+            <div
+              class="flex flex-col items-center justify-center py-4 rounded-2xl border-2 border-teal-950">
               <img
                 src="./images/tech-skills/react.svg"
                 alt="React JS"
-                class="w-16 h-16 object-cover" />
+                class="w-8 h-8 object-cover" />
               <p>React JS</p>
             </div>
           </li>
-          <li class="font-comic font-bold text-xl rounded-2xl border-2">
-            <div class="flex flex-col items-center justify-center my-4">
+          <li class="font-comic font-bold rounded-2xl border-2">
+            <div
+              class="flex flex-col items-center justify-center py-4 rounded-2xl border-2 border-teal-950">
               <img
                 src="./images/tech-skills/vue.svg"
                 alt="React JS"
-                class="w-16 h-16" />
+                class="w-8 h-8 object-cover" />
               <p>Vue JS</p>
             </div>
           </li>
-          <li class="font-comic font-bold text-xl rounded-2xl border-2">
-            <div class="flex flex-col items-center justify-center my-4">
+          <li class="font-comic font-bold rounded-2xl border-2">
+            <div
+              class="flex flex-col items-center justify-center py-4 rounded-2xl border-2 border-teal-950">
               <img
                 src="./images/tech-skills/next-js.svg"
                 alt="Next JS"
-                class="w-16 h-16" />
+                class="w-8 h-8 object-cover" />
               <p>Next JS</p>
             </div>
           </li>
-          <li class="font-comic font-bold text-xl rounded-2xl border-2">
-            <div class="flex flex-col items-center justify-center my-4">
+          <li class="font-comic font-bold rounded-2xl border-2">
+            <div
+              class="flex flex-col items-center justify-center py-4 rounded-2xl border-2 border-teal-950">
               <img
                 src="./images/tech-skills/javascript.svg"
                 alt="JavaScript"
-                class="w-16 h-16 object-cover" />
+                class="w-8 h-8 object-cover" />
               <p>JavaScript</p>
             </div>
           </li>
-          <li class="font-comic font-bold text-xl rounded-2xl border-2">
-            <div class="flex flex-col items-center justify-center my-4">
+          <li class="font-comic font-bold rounded-2xl border-2">
+            <div
+              class="flex flex-col items-center justify-center py-4 rounded-2xl border-2 border-teal-950">
               <img
                 src="./images/tech-skills/typescript.svg"
                 alt="TypeScript"
-                class="w-16 h-16 object-cover" />
+                class="w-8 h-8 object-cover" />
               <p>TypeScript</p>
             </div>
           </li>
-          <li class="font-comic font-bold text-xl rounded-2xl border-2">
-            <div class="flex flex-col items-center justify-center my-4">
+          <li class="font-comic font-bold rounded-2xl border-2">
+            <div
+              class="flex flex-col items-center justify-center py-4 rounded-2xl border-2 border-teal-950">
               <img
                 src="./images/tech-skills/tailwind.svg"
                 alt="Tailwind"
-                class="w-16 h-16 object-cover" />
+                class="w-8 h-8 object-cover" />
               <p>Tailwind</p>
             </div>
           </li>
-          <li class="font-comic font-bold text-xl rounded-2xl border-2">
-            <div class="flex flex-col items-center justify-center my-4">
+          <li class="font-comic font-bold rounded-2xl border-2">
+            <div
+              class="flex flex-col items-center justify-center py-4 rounded-2xl border-2 border-teal-950">
               <img
                 src="./images/tech-skills/mongodb.svg"
                 alt="MongoDB"
-                class="w-16 h-16 object-cover" />
+                class="w-8 h-8 object-cover" />
               <p>MongoDB</p>
             </div>
           </li>
-          <li class="font-comic font-bold text-xl rounded-2xl border-2">
-            <div class="flex flex-col items-center justify-center my-4">
+          <li class="font-comic font-bold rounded-2xl border-2">
+            <div
+              class="flex flex-col items-center justify-center py-4 rounded-2xl border-2 border-teal-950">
               <img
                 src="./images/tech-skills/nodejs.svg"
                 alt="Node JS"
-                class="w-16 h-16" />
+                class="w-8 h-8" />
               <p>Node Js</p>
             </div>
           </li>
-          <li class="font-comic font-bold text-xl rounded-2xl border-2">
-            <div class="flex flex-col items-center justify-center my-4">
+          <li class="font-comic font-bold rounded-2xl border-2">
+            <div
+              class="flex flex-col items-center justify-center py-4 rounded-2xl border-2 border-teal-950">
               <img
                 src="./images/tech-skills/express.svg"
                 alt="Express JS"
-                class="w-16 h-16 object-cover" />
+                class="w-8 h-8 object-cover" />
               <p>Express JS</p>
             </div>
           </li>
         </ul>
       </section>
-      <section id="work-experience">
+      <section id="work-experience" class="min-h-screen">
         <h2
-          class="font-bold text-4xl text-teal-950 text-center font-comic mb-8 md:text-left">
-          Work Experience
+          class="font-bold text-2xl text-teal-950 text-center font-comic mb-8 md:text-left">
+          Work Experience 💼
         </h2>
         <div class="flex flex-col gap-6 border-teal-950 border-l-2 ml-2 pl-6">
           <div class="">
@@ -255,12 +265,12 @@
                   <h3 class="font-bold font-comic">
                     DataOn (PT Indodev Niaga Internet)
                   </h3>
-                  <h4 class="font-bold !text-gray-500 font-comic">
+                  <h4 class="font-bold text-gray-500 font-comic">
                     Mei 2023 - Present
                   </h4>
                 </div>
                 <div class="mt-2 card-body">
-                  <ul class="list-disc list-inside">
+                  <ul class="list-disc list-inside text-sm">
                     <li>
                       Developing and implementing custom web applications using
                       React.js, CFML, HTML, CSS, and JavaScript to meet specific
@@ -304,38 +314,29 @@
                     class="w-40 h-32 object-cover"
                     height="96" />
                   <h3 class="font-bold text-xl font-comic">
-                    Software Engineer
+                    Frontend Web Engineer
                   </h3>
                   <h3 class="font-bold font-comic">
-                    QATROS (PT. QATROS TEKNOLOGI NUSANTARA)
+                    PT. QATROS TEKNOLOGI NUSANTARA
                   </h3>
                   <h4 class="font-bold !text-gray-500 font-comic">
-                    Mei 2023 - Present
+                    Agust 2022 - December 2022
                   </h4>
                 </div>
                 <div class="mt-2 card-body">
-                  <ul class="list-disc list-inside">
+                  <ul class="list-disc list-inside text-sm">
                     <li>
-                      Developing and implementing custom web applications using
-                      React.js, Node.js, HTML, CSS, and JavaScript to meet
-                      specific client requirements
+                      Developed of high-performance web applications utilizing
+                      Nuxt.js, covering the application of core Vue.js concepts
+                      such as Vue Router, Vuex, and data reactivity.
                     </li>
                     <li>
-                      Collaborating closely with team members to ensure
-                      deliverables align with client expectations and business
-                      objectives
+                      Developed website interface with booking system and
+                      Midtrans payment integration.
                     </li>
                     <li>
-                      Maintaining consistent code quality through Git version
-                      control and implementing CI/CD best practices
-                    </li>
-                    <li>
-                      Creating customized solutions for enterprise clients using
-                      modern web technologies and frameworks
-                    </li>
-                    <li>
-                      Troubleshooting and resolving technical issues to ensure
-                      smooth application deployment and operation
+                      Instrumental in building the Gompu application, applying
+                      the Scrum method in a collaborative team environment.
                     </li>
                   </ul>
                 </div>
@@ -348,7 +349,7 @@
     <footer
       aria-label="Footer"
       class="bg-teal-950 flex justify-center p-4 mt-8">
-      <p class="text-gray-200 text-center">
+      <p class="text-gray-200 text-center text-comic text-sm">
         &copy;2025 - Rakhel Cakra proudly powers this homepage.
       </p>
     </footer>
