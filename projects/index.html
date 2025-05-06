@@ -4,15 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CakraSera</title>
-    <link rel="stylesheet" href="css/output.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="/css/main.css" />
   </head>
   <body>
     <header class="header px-6xl">
@@ -44,44 +43,48 @@
     </header>
 
     <main>
-      <section id="contact-me" class="flex">
-        <h1>Don’t be shy! Let’s connect</h1>
-        <h1>Contact Me & Social Media</h1>
-        <ul>
-          <li>
-            <a href="#">
-              <i class="fa-brands fa-linkedin"></i>
-              <h2>Connect with me on Linkedln</h2>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i
-                width="28"
-                height="28"
-                class="fa-brands fa-instagram"
-                aria-hidden="true"
-              ></i>
-              <h2>Follow each other on Instagram</h2>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-              <h2>Send me your message via Email</h2>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fa-brands fa-twitter" aria-hidden="true"></i>
-              <h2>Connect with me on Linkedln</h2>
-            </a>
-          </li>
-        </ul>
+      <section id="projects" class="text-center">
+        <h1 class="mb-4 text-3xl font-bold">Projects</h1>
+        <!-- <div class="flex justify-center gap-2 mt-4 text-lg">
+          <button class="filter-btn active">ALL</button>
+          <button class="filter-btn">WEBSITE</button>
+          <button class="filter-btn">MOBILE</button>
+        </div> -->
+        <div class="project-list !mt-4">
+          <div id="all-projects" class="grid grid-cols justify-items-center">
+            <div class="project-card">
+              <div class="project-img">
+                <img
+                  src="/images/projects/narai-coder.jpg"
+                  alt="Project 1"
+                  width="336"
+                  height="336" />
+              </div>
+              <div class="card-content">
+                <h2>Project 1</h2>
+                <p>
+                  Cloning e-commerce like tokopedia. Cloning e-commerce like
+                  tokopedia
+                </p>
+                <div class="tech-stacks">
+                  <ul class="flex justify-center">
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>Node Js</li>
+                    <li>React Js</li>
+                  </ul>
+                </div>
+                <button>See More Detail</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
       <p>&copy;2025 - Rakhel Cakra proudly powers this homepage.</p>
     </footer>
+    <script src="/js/dummyData.js"></script>
+    <script src="/projects/script.js"></script>
   </body>
 </html>
