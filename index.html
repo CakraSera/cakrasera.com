@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CakraSera</title>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,6 +14,8 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap"
       rel="stylesheet" />
+
+    <!-- Styles -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -36,7 +40,7 @@
   </head>
   <body class="bg-gray-200">
     <header
-      class="flex justify-between px-4 md:px-32 py-4 md:py-10 bg-teal-950 text-gray-200 w-full fixed">
+      class="flex justify-between px-4 md:px-32 py-4 md:py-10 bg-teal-950 text-gray-200 w-full">
       <h1
         class="font-bold font-bangers text-gray-200 text-[clamp(1.5rem,4vw,3rem)] md:text-2xl">
         🦉Rakhel Cakra K.S
@@ -71,40 +75,86 @@
       </nav>
     </header>
 
-    <main>
-      <section class="hero md:flex md:gap-x-16">
-        <div class="hero-header">
-          <img
-            width="336"
-            height="336"
-            class="w-xl"
-            src="/images/web-profile-img.jpg"
-            alt="hero-img" />
-          <nav class="flex justify-center" aria-label="User Social Media">
-            <ul>
-              <li>
-                <a href="https://github.com/CakraSera" target="_blank">
-                  <i class="fa-brands fa-github"></i>
-                  <span>Github</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/rakhelcakrakusumadinatasera/"
-                  target="_blank">
-                  <i class="fa-brands fa-linkedin"></i>
-                  <span>Linkedln</span>
-                </a>
-              </li>
-              <li>
-                <a href="https://x.com/CakraRakhel" target="_blank">
-                  <i class="fa-brands fa-twitter"></i>
-                  <span>Twitter</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
+    <main class="md:mx-12 mx-4">
+      <section class="min-h-screen md:min-h-[calc(100vh-8rem)]">
+        <div class="p-6 rounded-2xl bg-teal-950 text-gray-200 mx-auto flex">
+          <div class="hero-header">
+            <div class="mb-2 flex justify-center">
+              <img
+                class="w-xl md:w-64 rounded-2xl"
+                src="/images/web-profile-img.jpg"
+                alt="hero-img" />
+            </div>
+          </div>
+          <article class="hero-content">
+            <h1 class="font-bold text-[clamp(1.5rem,4vw,3rem)] font-comic">
+              👋 Hi, I'm
+
+              <span
+                class="text-orange-700 border-gray-200 font-extrabold bg-gray-200 rounded-2xl px-2"
+                >Cakra</span
+              >
+            </h1>
+
+            <p
+              class="border-gray-200 text font-comic font-bold text-xl md:text-[clamp(1rem,4vw,1.5rem)]">
+              I'm a Fullstack Web Developer 👨🏼‍💻
+            </p>
+            <p>
+              Full Web Developer with 2+ years of experience transforming ideas
+              into elegant solutions. Fluent in TypeScript, JavaScript, React,
+              and Node.js, I blend technical expertise with creative
+              problem-solving to build intuitive applications that make an
+              impact. Let's create something remarkable together.
+            </p>
+            <nav
+              class="navlinks flex justify-center"
+              aria-label="User Social Media">
+              <ul class="flex gap-4">
+                <li
+                  class="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-orange-700 rounded-2xl">
+                  <a href="https://github.com/CakraSera" target="_blank">
+                    <i class="fa-brands fa-github text-2xl"></i>
+
+                    <p class="font-comic font-bold">Github</p>
+                  </a>
+                </li>
+
+                <li
+                  class="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-orange-700 rounded-2xl">
+                  <a
+                    href="https://www.linkedin.com/in/rakhelcakrakusumadinatasera/"
+                    target="_blank">
+                    <i class="fa-brands fa-linkedin text-2xl"></i>
+
+                    <p class="font-comic font-bold">Linkedln</p>
+                  </a>
+                </li>
+
+                <li
+                  class="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-orange-700 rounded-2xl">
+                  <a href="https://x.com/CakraRakhel" target="_blank">
+                    <i class="fa-brands fa-twitter text-2xl"></i>
+
+                    <p class="font-comic font-bold">Twitter</p>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </article>
         </div>
+      </section>
+
+      <section
+        id="about-me"
+        class="flex flex-col justify-center mx-20 lg:pt-40 min-h-screen md:visible">
+        <h2 class="font-bold text-2xl font-comic text-teal-800">
+          Introduction
+        </h2>
+
+        <h2 class="font-bold text-4xl text-teal-950 font-comic">
+          About Me <span class="text-2xl">🙋🏼‍♂️</span>
+        </h2>
         <p class="font-comic font-bold text-xl">
           Full Web Developer with 2+ years of experience transforming ideas into
           elegant solutions. Fluent in TypeScript, JavaScript, React, and
