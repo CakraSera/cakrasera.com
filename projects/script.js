@@ -1,7 +1,9 @@
-const projectsElement = document.getElementById("all-projects");
-console.log(projectsData);
+import { projects } from "../js/dummyData.js";
+console.log("🚀 ~ projects:", projects);
 
-projectsElement.innerHTML = projectsData.map((project) => {
+const projectsElement = document.getElementById("all-projects");
+
+projectsElement.innerHTML = projects.map((project) => {
   return `
               <div class="project-card">
               <div class="project-img">
