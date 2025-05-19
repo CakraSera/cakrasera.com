@@ -63,6 +63,38 @@ export const projects = [
       "Gained experience with drag and drop functionality",
     ],
   },
+  {
+    id: 3,
+    name: "Narai Coder",
+    description:
+      "A personal website comunity for sharing knowledge and resources.",
+    image: "../images/projects/narai-coder.jpg",
+    link: "https://naraicoder.org",
+    github: "https://github.com/Hayolox/NaraiCoder",
+    tags: ["html", "css", "bootstrap"],
+    date: "2022-03-01",
+    status: "completed",
+    type: "web",
+    technologies: [
+      { name: "HTML", icon: "https://via.placeholder.com/20" },
+      { name: "CSS", icon: "https://via.placeholder.com/20" },
+      { name: "Bootstrap", icon: "https://via.placeholder.com/20" },
+    ],
+    features: [
+      "User registration and login",
+      "Post creation and commenting",
+      "Responsive design",
+    ],
+    challenges: [
+      "Implementing user authentication",
+      "Creating a responsive layout",
+      "Handling user input validation",
+    ],
+    learnings: [
+      "Improved HTML and CSS skills",
+      "Learned about user authentication",
+    ],
+  },
 ];
 
 export const workExperience = [
