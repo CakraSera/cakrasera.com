@@ -71,7 +71,7 @@ export const workExperience = [
     companyName: "DataOn (PT Indodev Niaga Internet)",
     position: "Implementation Consultant Jr",
     logo: "./images/dataon-logo.png",
-    startDate: new Date("2022-01-01"),
+    startDate: new Date("2024-05-27"),
     endDate: new Date(),
     technologies: [
       { name: "CFML", icon: "https://via.placeholder.com/20" },
