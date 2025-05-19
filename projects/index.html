@@ -42,18 +42,21 @@
       </nav>
     </header>
 
-    <main>
-      <section id="projects" class="text-center">
-        <h1 class="mb-4 text-3xl font-bold">Projects</h1>
+    <main class="flex flex-col items-center">
+      <section id="projects" class="container !pb-16 md:!pb-24">
+        <h1
+          class="text-center font-extrabold text-4xl md:text-5xl tracking-tight">
+          Projects
+        </h1>
         <!-- <div class="flex justify-center gap-2 mt-4 text-lg">
           <button class="filter-btn active">ALL</button>
           <button class="filter-btn">WEBSITE</button>
           <button class="filter-btn">MOBILE</button>
         </div> -->
-        <div class="project-list !mt-4 flex flex-col items-center">
+        <div class="project-list !mt-10 flex flex-col items-center">
           <div
             id="all-projects"
-            class="grid grid-cols-3 gap-2 w-fit justify-center">
+            class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             <div class="project-card">
               <div class="project-img">
                 <img
