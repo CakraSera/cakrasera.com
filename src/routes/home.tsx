@@ -14,7 +14,7 @@ export function Homepage() {
           </div>
           <article className="hero-content">
             <h1 className="font-bold text-[clamp(1.5rem,4vw,3rem)] font-comic">
-              👋 Hi, I'm
+              👋 Hi, I'm{" "}
               <span className="text-orange-700 border-gray-200 font-extrabold bg-gray-200 rounded-2xl px-2">
                 Cakra
               </span>
