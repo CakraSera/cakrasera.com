@@ -1,0 +1,98 @@
+export const projects = [
+  {
+    id: 1,
+    name: "Address Book",
+    description: "A simple address book application to manage contacts.",
+    image: "/app/assets/images/projects/address-book.png",
+    link: "https://address-book.cakrasera.com",
+    github: "https://github.com/CakraSera/address-book",
+    tags: ["JavaScript", "HTML", "Tailwind CSS"],
+    date: "2023-01-01",
+    status: "completed",
+    type: "web",
+    technologies: [
+      { name: "JavaScript", icon: "https://via.placeholder.com/20" },
+      { name: "HTML", icon: "https://via.placeholder.com/20" },
+      { name: "Tailwind CSS", icon: "https://via.placeholder.com/20" },
+    ],
+    features: [
+      "Add, edit, and delete contacts",
+      "Search and filter contacts",
+      "Responsive design",
+    ],
+    challenges: [
+      "Implementing local storage for data persistence",
+      "Creating a responsive layout",
+      "Handling user input validation",
+    ],
+    learnings: [
+      "Improved JavaScript skills",
+      "Learned about local storage",
+      "Gained experience with responsive design",
+    ],
+  },
+  {
+    id: 2,
+    name: "Kanban Board",
+    description: "A kanban board application to manage tasks and projects.",
+    image: "/app/assets/images/projects/kanban-board.png",
+    link: "https://kanban-board.cakrasera.com",
+    github: "https://github.com/CakraSera/kanban",
+    tags: ["React", "Tailwind", "Shadcn UI"],
+    date: "2023-02-01",
+    status: "in-progress",
+    type: "web",
+    technologies: [
+      { name: "React", icon: "https://via.placeholder.com/20" },
+      { name: "Tailwind CSS", icon: "https://via.placeholder.com/20" },
+      { name: "Shadcn UI", icon: "https://via.placeholder.com/20" },
+    ],
+    features: [
+      "Create, edit, and delete tasks",
+      "Drag and drop functionality",
+      "Filter tasks by status",
+    ],
+    challenges: [
+      "Implementing drag and drop functionality",
+      "Managing state with React",
+      "Creating a user-friendly interface",
+    ],
+    learnings: [
+      "Improved React skills",
+      "Learned about state management",
+      "Gained experience with drag and drop functionality",
+    ],
+  },
+  {
+    id: 3,
+    name: "Narai Coder",
+    description:
+      "A personal website comunity for sharing knowledge and resources.",
+    image: "/app/assets/images/projects/narai-coder.jpg",
+    link: "https://naraicoder.org",
+    github: "https://github.com/Hayolox/NaraiCoder",
+    tags: ["html", "css", "bootstrap"],
+    date: "2022-03-01",
+    status: "completed",
+    type: "web",
+    technologies: [
+      { name: "HTML", icon: "https://via.placeholder.com/20" },
+      { name: "CSS", icon: "https://via.placeholder.com/20" },
+      { name: "Bootstrap", icon: "https://via.placeholder.com/20" },
+    ],
+    features: [
+      "User registration and login",
+      "Post creation and commenting",
+      "Responsive design",
+    ],
+    challenges: [
+      "Implementing user authentication",
+      "Creating a responsive layout",
+      "Handling user input validation",
+    ],
+    learnings: [
+      "Improved HTML and CSS skills",
+      "Learned about user authentication",
+    ],
+  },
+];
