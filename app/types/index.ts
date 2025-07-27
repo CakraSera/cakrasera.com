@@ -1,16 +1,26 @@
-export type Project = {
-  id: number;
-  name: string;
-  description: string;
-  image: string;
-  link: string;
-  github: string;
+export type ProjectCategory =
+  | "All"
+  | "Fullstack"
+  | "Frontend"
+  | "Backend"
+  | "Mobile"
+  | "Learning"
+  | "Bootcamp"
+  | "Other";
+
+export interface Project {
+  slug: string;
+  title: string;
+  shortDescription: string;
+  longDescription: string[];
+  category: ProjectCategory;
   tags: string[];
-  date: string;
-  status: "completed" | "in-progress" | "planned";
-  type: "web" | "mobile" | "desktop";
-  technologies: { name: string; icon: string }[];
-  features: string[];
-  challenges: string[];
-  learnings: string[];
-};
+  image: string;
+  liveLink?: string;
+  githubLink?: string;
+  features?: string[];
+  technologiesUsed?: string[];
+  challenges?: string[];
+  learnings?: string[];
+  screenshots?: { src: string; alt: string }[];
+}

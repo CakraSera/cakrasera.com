@@ -16,14 +16,16 @@ import {
   Zap,
   Type,
   Palette,
+  ExternalLink,
+  Eye,
 } from "lucide-react";
 
 import { Button } from "~/components/ui/button";
 import { Badge } from "~/components/ui/badge";
 
 import type { Route } from "./+types/home";
-import { projects } from "~/data/projects";
-import type { Project } from "~/types";
+import { projectsData } from "~/data/projects";
+import { Card, CardContent } from "~/components/ui/card";
 
 // Map skill names to Lucide React icons
 const skillIcons: { [key: string]: React.ElementType } = {
@@ -41,32 +43,22 @@ const skillIcons: { [key: string]: React.ElementType } = {
   "API Integration": Plug,
 };
 
-function filter_newest() {
-  return [...projects]
-    .sort((a, b) => {
-      const dateA = new Date(a.date as any).getTime();
-      const dateB = new Date(b.date as any).getTime();
-
-      // For descending order, subtract dateA from dateB.
-      // For ascending order (oldest to newest), it would be dateA - dateB.
-      return dateB - dateA;
-    })
-    .filter((_, index: number) => index < 3);
-}
-
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "Portfolio - Fullstack Web Developer" },
+    {
+      name: "description",
+      content:
+        "Personal portfolio website showcasing my skills and projects as a fullstack web developer.",
+    },
   ];
 }
 
 export default function Home() {
-  console.log({ filter_newest });
   return (
     <>
       {/* Hero Section */}
-      <section className="container mx-auto space-y-8 py-16 md:py-24">
+      <section className="container space-y-8 py-16 md:py-24">
         <div className="flex flex-col items-center gap-8 md:flex-row md:gap-16">
           <div className="space-y-6 text-center md:w-1/2 md:text-left">
             <Badge className="px-3 py-1 text-sm" variant="outline">
@@ -122,7 +114,7 @@ export default function Home() {
           <div className="flex justify-center md:w-1/2 md:justify-end">
             <div className="border-primary/20 relative h-64 w-64 overflow-hidden rounded-full border-4 sm:h-72 sm:w-72 md:h-80 md:w-80">
               <img
-                src="/app/assets/images/web-profile-img.jpg?height=320&width=320"
+                src="/public/assets/images/web-profile-img.jpg?height=320&width=320"
                 alt="Developer portrait"
                 className="object-cover"
               />
@@ -257,30 +249,80 @@ export default function Home() {
             </p>
           </div>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {filter_newest().map((project) => (
-              <div
-                key={project.id}
+            {projectsData.map((project) => (
+              <Card
+                key={project.slug}
                 className="group bg-background overflow-hidden rounded-lg border shadow-sm"
               >
-                <div className="relative h-48 w-full overflow-hidden">
-                  <img
-                    src={project.image || "/placeholder.svg"}
-                    alt={project.name}
-                    className="object-cover transition-transform group-hover:scale-105"
-                  />
-                </div>
-                <div className="space-y-4 p-6">
-                  <h3 className="text-xl font-bold">{project.name}</h3>
-                  <p className="text-muted-foreground">{project.description}</p>
-                  <div className="flex flex-wrap gap-2">
-                    {project.tags.map((tag, tagIndex) => (
-                      <Badge key={tagIndex} variant="secondary">
-                        {tag}
-                      </Badge>
-                    ))}
+                <Link to={`/projects/${project.slug}`}>
+                  <div className="relative h-48 w-full overflow-hidden">
+                    <img
+                      src={project.image || "/placeholder.svg"}
+                      alt={project.title}
+                      className="object-cover transition-transform group-hover:scale-105"
+                    />
                   </div>
+                  <CardContent className="p-4 sm:p-6">
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-bold">{project.title}</h3>
+                      <p className="text-muted-foreground text-sm">
+                        {project.shortDescription}
+                      </p>
+                      <div className="flex flex-wrap gap-2">
+                        {project.tags.map((tag, tagIndex) => (
+                          <Badge key={tagIndex} variant="secondary">
+                            {tag}
+                          </Badge>
+                        ))}
+                      </div>
+                    </div>
+                  </CardContent>
+                </Link>
+                <div className="flex flex-wrap gap-3 p-4 pt-0">
+                  {project.liveLink && (
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      asChild
+                      className="gap-1 bg-transparent"
+                    >
+                      <a
+                        href={project.liveLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <ExternalLink className="mr-1 h-4 w-4" /> Live Demo
+                      </a>
+                    </Button>
+                  )}
+                  {project.githubLink && (
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      asChild
+                      className="gap-1 bg-transparent"
+                    >
+                      <a
+                        href={project.githubLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Github className="mr-1 h-4 w-4" /> GitHub
+                      </a>
+                    </Button>
+                  )}
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    asChild
+                    className="gap-1 bg-transparent"
+                  >
+                    <Link to={`/projects/${project.slug}`}>
+                      <Eye /> View Detail
+                    </Link>
+                  </Button>
                 </div>
-              </div>
+              </Card>
             ))}
           </div>
           <div className="pt-4 text-center">

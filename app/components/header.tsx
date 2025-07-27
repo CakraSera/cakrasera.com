@@ -1,13 +1,15 @@
 import { NavLink } from "react-router";
 import { Button } from "~/components/ui/button";
 import { ModeToggle } from "./mode-toggle";
+import { MobileNav } from "./mobile-nav";
 
 export function Header() {
   return (
     <header className="bg-background/95 supports-[backdrop-filter]:bg-background/60 sticky top-0 z-40 flex w-full justify-center border-b backdrop-blur">
-      <div className="container flex h-16 items-center justify-between">
+      <div className="container mx-auto flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           {/* <MobileNav /> */}
+          <MobileNav />
           <NavLink to="/" className="text-xl font-bold">
             Rakhel Cakra K.S
           </NavLink>

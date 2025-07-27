@@ -36,7 +36,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        {children}
+        <ThemeProvider attribute="class">{children}</ThemeProvider>
         <ScrollRestoration />
         <Scripts />
       </body>
@@ -46,15 +46,13 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
 export default function App() {
   return (
-    <ThemeProvider>
-      <div className="flex flex-col min-h-screen">
+    <div className="flex min-h-screen flex-col">
       <Header />
-        <main className="flex-1">
-          <Outlet />
-        </main>
+      <main className="flex-1">
+        <Outlet />
+      </main>
       <Footer />
-      </div>
-    </ThemeProvider>
+    </div>
   );
 }
 
@@ -75,7 +73,7 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
   }
 
   return (
-    <main className="container mx-auto p-4 pt-16">
+    <main className="@container mx-auto p-4 pt-16">
       <h1>{message}</h1>
       <p>{details}</p>
       {stack && (

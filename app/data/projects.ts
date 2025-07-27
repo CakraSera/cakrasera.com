@@ -1,98 +1,212 @@
-export const projects = [
+import type { Project } from "~/types";
+
+import type { LucideIcon } from "lucide-react";
+import {
+  Atom,
+  Server,
+  Type,
+  Palette,
+  Database,
+  GitBranch,
+  Smartphone,
+  Plug,
+  BookOpen,
+  Code,
+  LayoutDashboard,
+  MessageSquare,
+  Cloud,
+  Zap,
+  Globe,
+} from "lucide-react";
+
+export type ProjectCategory =
+  | "All"
+  | "Fullstack"
+  | "Frontend"
+  | "Backend"
+  | "Mobile"
+  | "Learning"
+  | "Bootcamp"
+  | "Other";
+
+// Map skill names to Lucide React icons for display
+export const skillIcons: { [key: string]: LucideIcon } = {
+  "HTML & CSS": Code,
+  JavaScript: Code,
+  React: Atom,
+  "Node.js": Server,
+  "Next.js": Zap,
+  TypeScript: Type,
+  "Tailwind CSS": Palette,
+  MongoDB: Database,
+  Express: Server,
+  Git: GitBranch,
+  "Responsive Design": Smartphone,
+  "API Integration": Plug,
+  MDX: BookOpen,
+  Stripe: Globe,
+  "Socket.io": MessageSquare,
+  "D3.js": LayoutDashboard,
+  PostgreSQL: Database,
+  GraphQL: Cloud,
+  Docker: Server,
+  AWS: Cloud,
+  "CI/CD": GitBranch,
+  WordPress: Globe,
+  Bootstrap: Palette,
+  "Chart.js": LayoutDashboard,
+  Supabase: Database,
+  "OpenWeather API": Plug,
+  Mapbox: Globe,
+  "CSS Modules": Palette,
+  Redux: Atom,
+  "Material UI": Palette,
+  Firebase: Database,
+  "Health APIs": Plug,
+  Prisma: Database,
+  "React Native": Smartphone,
+};
+
+export const projectsData: Project[] = [
   {
-    id: 1,
-    name: "Address Book",
-    description: "A simple address book application to manage contacts.",
-    image: "/app/assets/images/projects/address-book.png",
-    link: "https://address-book.cakrasera.com",
-    github: "https://github.com/CakraSera/address-book",
-    tags: ["JavaScript", "HTML", "Tailwind CSS"],
-    date: "2023-01-01",
-    status: "completed",
-    type: "web",
-    technologies: [
-      { name: "JavaScript", icon: "https://via.placeholder.com/20" },
-      { name: "HTML", icon: "https://via.placeholder.com/20" },
-      { name: "Tailwind CSS", icon: "https://via.placeholder.com/20" },
+    slug: "address-book",
+    title: "Address Book",
+    shortDescription:
+      "A responsive contact management system with local storage persistence.",
+    longDescription: [
+      "Developed a comprehensive address book publiclication that enables users to manage their contacts efficiently. The solution features full CRUD functionality with intuitive search and filtering capabilities.",
+      "Implemented a clean, modern UI using Tailwind CSS that adapts seamlessly across mobile and desktop devices. The publiclication leverages browser local storage to maintain data persistence between sessions.",
+      "Focus on UX principles resulted in a zero-learning-curve interface with instant feedback for user actions. Form validation ensures data integrity for all contact information.",
     ],
+    category: "Frontend",
+    tags: ["JavaScript", "Tailwind CSS", "LocalStorage", "Responsive Design"],
+    image: "/public/assets/images/projects/address-book.png",
+    liveLink: "https://address-book.cakrasera.com",
+    githubLink: "https://github.com/CakraSera/address-book",
     features: [
-      "Add, edit, and delete contacts",
-      "Search and filter contacts",
-      "Responsive design",
+      "Add/edit/delete contacts with validation",
+      "Instant search and filtering",
+      "Local storage persistence",
+      "Responsive mobile-first design",
+      "Dark/light mode toggle",
     ],
+    technologiesUsed: ["JavaScript", "HTML", "Tailwind CSS"],
     challenges: [
-      "Implementing local storage for data persistence",
-      "Creating a responsive layout",
-      "Handling user input validation",
+      "Implementing efficient local storage synchronization",
+      "Creating responsive layouts for complex contact cards",
+      "Developing real-time search with debounce functionality",
     ],
     learnings: [
-      "Improved JavaScript skills",
-      "Learned about local storage",
-      "Gained experience with responsive design",
+      "Advanced DOM manipulation techniques",
+      "Browser storage API implementation",
+      "Performance optimization for filter operations",
+    ],
+    screenshots: [
+      {
+        src: "/public/assets/images/projects/address-book-1.png",
+        alt: "Contact list view",
+      },
+      {
+        src: "/public/assets/images/projects/address-book-2.png",
+        alt: "Contact detail view",
+      },
     ],
   },
   {
-    id: 2,
-    name: "Kanban Board",
-    description: "A kanban board application to manage tasks and projects.",
-    image: "/app/assets/images/projects/kanban-board.png",
-    link: "https://kanban-board.cakrasera.com",
-    github: "https://github.com/CakraSera/kanban",
-    tags: ["React", "Tailwind", "Shadcn UI"],
-    date: "2023-02-01",
-    status: "in-progress",
-    type: "web",
-    technologies: [
-      { name: "React", icon: "https://via.placeholder.com/20" },
-      { name: "Tailwind CSS", icon: "https://via.placeholder.com/20" },
-      { name: "Shadcn UI", icon: "https://via.placeholder.com/20" },
+    slug: "kanban-board",
+    title: "Kanban Board",
+    shortDescription:
+      "Drag-and-drop task management system inspired by Kanban methodology.",
+    longDescription: [
+      "Built an interactive task management publiclication using React with full drag-and-drop functionality. The board features customizable columns that visualize workflow stages from 'To Do' to 'Completed'.",
+      "Implemented a responsive UI with Shadcn UI components and Tailwind CSS styling. The publiclication includes task filtering, priority tagging, and due date tracking.",
+      "Designed with extensibility in mind, allowing easy integration with backend services through a modular architecture.",
     ],
+    category: "Frontend",
+    tags: ["React", "Drag and Drop", "Tailwind CSS", "State Management"],
+    image: "/public/assets/images/projects/kanban-board.png",
+    liveLink: "https://kanban-board.cakrasera.com",
+    githubLink: "https://github.com/CakraSera/kanban",
     features: [
-      "Create, edit, and delete tasks",
-      "Drag and drop functionality",
-      "Filter tasks by status",
+      "Drag-and-drop task management",
+      "Customizable workflow columns",
+      "Task filtering by status/tags",
+      "Priority indicators and due dates",
+      "Responsive board layout",
     ],
+    technologiesUsed: ["React", "Tailwind CSS", "Shadcn UI", "React DnD"],
     challenges: [
-      "Implementing drag and drop functionality",
-      "Managing state with React",
-      "Creating a user-friendly interface",
+      "Implementing smooth drag-and-drop animations",
+      "Managing complex state transitions",
+      "Creating accessible keyboard controls",
+      "Optimizing performance for large task sets",
     ],
     learnings: [
-      "Improved React skills",
-      "Learned about state management",
-      "Gained experience with drag and drop functionality",
+      "Advanced React state management patterns",
+      "Drag-and-drop API implementation",
+      "Component library integration",
+      "Accessibility best practices",
+    ],
+    screenshots: [
+      {
+        src: "/public/assets/images/projects/kanban-1.png",
+        alt: "Main board view",
+      },
+      {
+        src: "/public/assets/images/projects/kanban-2.png",
+        alt: "Task detail modal",
+      },
     ],
   },
   {
-    id: 3,
-    name: "Narai Coder",
-    description:
-      "A personal website comunity for sharing knowledge and resources.",
-    image: "/app/assets/images/projects/narai-coder.jpg",
-    link: "https://naraicoder.org",
-    github: "https://github.com/Hayolox/NaraiCoder",
-    tags: ["html", "css", "bootstrap"],
-    date: "2022-03-01",
-    status: "completed",
-    type: "web",
-    technologies: [
-      { name: "HTML", icon: "https://via.placeholder.com/20" },
-      { name: "CSS", icon: "https://via.placeholder.com/20" },
-      { name: "Bootstrap", icon: "https://via.placeholder.com/20" },
+    slug: "narai-coder",
+    title: "Narai Coder",
+    shortDescription:
+      "Developer community platform for knowledge sharing and collaboration.",
+    longDescription: [
+      "Created a community hub for developers to share resources, tutorials, and project ideas. The platform features user-generated content with voting and commenting systems.",
+      "Implemented user authentication and authorization flows to enable personalized experiences. The responsive design ensures accessibility across devices with optimized reading experiences for technical content.",
+      "Focused on community engagement features including content bookmarks, user reputation systems, and discussion threads.",
     ],
+    category: "Fullstack",
+    tags: [
+      "Bootstrap",
+      "User Authentication",
+      "Community Platform",
+      "Responsive Design",
+    ],
+    image: "/public/assets/images/projects/narai-coder.jpg",
+    liveLink: "https://naraicoder.org",
+    githubLink: "https://github.com/Hayolox/NaraiCoder",
     features: [
-      "User registration and login",
-      "Post creation and commenting",
-      "Responsive design",
+      "User registration/login with profiles",
+      "Content creation and commenting",
+      "Resource voting and bookmarking",
+      "Responsive article layouts",
+      "Search and content filtering",
     ],
+    technologiesUsed: ["HTML", "CSS", "Bootstrap", "JavaScript", "Firebase"],
     challenges: [
-      "Implementing user authentication",
-      "Creating a responsive layout",
-      "Handling user input validation",
+      "Designing secure authentication flows",
+      "Implementing real-time comment updates",
+      "Creating accessible form validations",
+      "Optimizing content delivery performance",
     ],
     learnings: [
-      "Improved HTML and CSS skills",
-      "Learned about user authentication",
+      "Authentication system design",
+      "Community engagement patterns",
+      "Content moderation techniques",
+      "Semantic HTML structure",
+    ],
+    screenshots: [
+      {
+        src: "/public/assets/images/projects/narai-1.jpg",
+        alt: "Community homepage",
+      },
+      {
+        src: "/public/assets/images/projects/narai-2.jpg",
+        alt: "Article detail page",
+      },
     ],
   },
 ];
